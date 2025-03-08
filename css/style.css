@@ -1,0 +1,280 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navigation */
+nav {
+    background-color: #ff6b6b;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 9rem;
+    font-size: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+}
+
+nav a:hover {
+    background-color: #ff5252;
+    border-radius: 4px;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+h1 {
+    color: #ff6b6b;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+h2 {
+    color: #ff6b6b;
+    margin: 3rem;
+    text-align: center;
+    font-size: 30px;
+}
+
+h3 {
+    color: #ff6b6b;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: start;
+    font-size: 20px;
+}
+
+.main-image {
+    max-width: 100%;
+    height: auto;
+    margin: 1rem 0;
+    border-radius: 8px;
+}
+
+.main-image_pizza {
+    max-width: 100%;
+    height: auto;
+    margin: 1rem 0;
+    border-radius: 8px;
+}
+
+/* New style for secondary image */
+.secondary-image {
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #ff6b6b;
+    border-radius: 4px;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+/* Topping Grid */
+.topping-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 columns */
+    gap: 1rem;
+    margin: 1rem;
+    gap: 15px;
+}
+
+.topping-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.topping-item img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+form {
+    background-color: #ffffff;
+    /* White background for contrast */
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    max-width: 900px;
+    /* Limit form width */
+    margin: 20px auto;
+    /* Center the form */
+}
+
+/* Buttons */
+.form-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.order-button {
+    display: block;
+    background-color: #ff6b6b;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Arial", sans-serif;
+    transition: background-color 0.3s;
+    margin: 10px auto 0 auto; /* Centers with top spacing */
+    width: fit-content;
+}
+
+.order-button:hover {
+    background-color: #ffadad;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type="submit"] {
+    background-color: #ff6b6b;
+    color: white;
+}
+
+input[type="reset"] {
+    background-color: #6c757d;
+    color: white;
+}
+
+p {
+    font-family: "Georgia", serif;
+    font-size: 18px;
+    color: black;
+    /* Tomato red */
+    font-weight: 500;
+    line-height: 1.5;
+    margin: 20px 0;
+    padding: 15px;
+    border-left: 4px solid #ff6b6b;
+    /* Cheese yellow accent */
+    background-color: #fff;
+}
+
+
+
+/* Radio Button Labels */
+.crust-selection label {
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    color: #3c2f2f;
+    padding: 8px 15px; /* Comfortable click area */
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border-radius: 4px; /* Soft edges */
+    display: flex; /* Align radio and text horizontally */
+    align-items: center; /* Center vertically within the item */
+}
+.crust-selection input[type="radio"] {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.topping-item:hover {
+    background-color: #ffadad;
+    border-radius: 4px;
+}
+
+.crust-selection label:hover {
+    background-color: #ffadad;
+    border-radius: 4px;
+}
+
+.crust-selection input[type="radio"]:checked + span {
+    font-weight: bold;
+}
+
+.crust-selection label span {
+    vertical-align: middle;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.social-links li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-links a {
+    color: #ff6b6b;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #ffadad;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #f8f9fa;
+}
